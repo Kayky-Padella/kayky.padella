@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title> Contato / Avaliação </title>
+		<meta charset = "UTF-8">
+		<link rel = "icon" type ="image/png" href ="image/icon.png">
+		<link rel="stylesheet" type = "text/css"  href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script language ="javascript" type = "text/javascript">
+		
+			function validar () {
+		
+				var nome = contato.nome.value;
+				var idade = contato.idade.value;
+				var fone = contato.fone.value;
+				var email = contato.email.value;
+				var sn = contato.sn.value;
+				
+				if ( nome == "" ) {
+				
+				alert('Por favor, Preencha o campo nome!');
+				contato.nome.focus();
+				return false;
+				} 
+				
+				
+				if ( idade == "" ) {
+				
+				alert('Por favor, Preencha o campo idade!');
+				contato.idade.focus();
+				return false;
+				} 
+				
+				if ( fone == "" ) {
+				
+				
+				alert('Por favor, Preencha o campo fone!');
+				contato.fone.focus();
+				return false;
+				}
+				
+				if ( email == "" ) {
+				
+				
+				alert('Por favor, Preencha o campo email!');
+				contato.email.focus();
+				return false;
+				}  
+				
+				if ( sn == "" ) {
+				
+				
+				alert('Por favor, Preencha o campo sua nota!');
+				contato.email.focus();
+				return false;
+				} 
+				
+				}
+		</script>
+	</head>
+	<body bgcolor ="#fff">
+	
+		<nav>
+			<div class="logo"> 
+				<a href="index.html"> <img src="image/icon.png" width="10%" > </a>
+			</div> 
+	
+			<div class="menu-btn">
+				<i class="fa fa-bars fa-2x" onclick="menuShow()"></i>  
+			</div>
+	
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="index2.html">História</a></li>
+				<li> <a href="index3.html">Obras</a></li>
+				<li> <a href="index4.html">Suas Frases</a></li>
+				<li> <a href="index5.html">Contribuição</a></li>
+				<li> <a href="index6.html">Fale Conosco</a></li>
+			</ul>
+			
+		</nav>
+		<script src="main.js"></script>
+	<br> <br>
+	 
+	 <form name ="contato" action ="index7.html" method ="post"> <font face ="Times New Roman" size = "4" color = "#000">
+	
+	<center> <h2> Informações Pessoais </h2>  </center> <br>
+	
+	<center> <b> Nome*: </b> <input type="text" name ="nome" value =""> <br> <br>
+	<b>	Idade*: </b> <input type ="text" name ="idade" value =""> <br> <br> 
+	<b> Fone*: </b> <input type ="text" name ="fone" value =""> <br> <br> 
+	<b> Email*: </b> <input type ="text" name ="email" value =""> <br> <br> 
+	<b> Sua nota*: </b> <select name = "sn" input type="text" name ="sn" value =""> <br> <br>
+	<option> </option> 
+	<option> 0 </option> 
+	<option> 1 </option> 
+	<option> 2 </option> 
+	<option> 3 </option> 
+	<option> 4 </option> 
+	<option> 5 </option> 
+	<option> 6 </option>
+	<option> 7 </option> 
+	<option> 8 </option> 
+	<option> 9 </option> 
+	<option> 10 </option>
+	</select> <br> <br>
+	<textarea cols ="40" rows ="15" name ="obs"> Seu comentário: </textarea> <br> <br> 
+	
+
+			<button type ="reset" name="limpa" class="bu"> Limpar </button>
+			<button type ="submit" onclick="return validar()" class="but"> Enviar </button> </center>
+
+		</form>
+	
+	</font>
+	
+	<center>
+	<br> <br>
+	
+	<div class="rod"> 
+
+		<div class="seta" align ="right">
+
+			<a href ="#"> 
+				<img src ="image/set.png" width="30"> 
+			</a> 
+			
+		</div>
+		
+		<h5> LKG Company 2023 - &copyTodos os direitos reservados </h5>
+
+	</div>
+
+	</body>
+
+</html> 
+	
